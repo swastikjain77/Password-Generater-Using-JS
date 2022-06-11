@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+        <div class="div1">
+            <h1>Generate a <br><span>random password</span></h1>
+            <p>Never use an insecure password again.</p>
+        </div>
+
+
+        <div class="div2">
+            <button id="gen-btn">
+                    
+                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.30064 0.0462736C8.71692 0.177494 9 0.563541 9 1.00001V6.00001L13 6.00001C13.3729 6.00001 13.7148 6.20747 13.887 6.5382C14.0592 6.86893 14.0331 7.268 13.8192 7.57347L6.81924 17.5735C6.56894 17.931 6.11564 18.085 5.69936 17.9537C5.28309 17.8225 5 17.4365 5 17L5 12H1C0.627127 12 0.285222 11.7926 0.113024 11.4618C-0.0591735 11.1311 -0.0330591 10.732 0.180771 10.4265L7.18077 0.426549C7.43107 0.0689788 7.88436 -0.0849466 8.30064 0.0462736Z" fill="white"/>
+                    </svg>
+                Generate Passwords</button>
+
+            <input type="number" id="total-input" min="8" max="50" value="8" placeholder="Min 8 characters">
+
+            <hr>
+
+            <p style="text-align: center; padding-top:20px;">Click to Copy the Password</p>
+
+            <p id="message-el" style="text-align: center; padding-top:20px; color:#55F991;"></p>
+
+        </div>
+
+
+        <div class="div3" id="display-pass">
+
+            <input readonly="readonly" id="pass1" value="--" onclick="pass1Fun()">
+            <input readonly="readonly" id="pass2" value="--" onclick="pass2Fun()">
+            <input readonly="readonly" id="pass3" value="--" onclick="pass3Fun()">
+            <input readonly="readonly" id="pass4" value="--" onclick="pass4Fun()">
+
+        </div>
+
+        <script src="index.js"></script>
+</body>
+
+</html>
